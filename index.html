@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <div id="container">
+
+        </div>
+
+        <script>
+            
+            let redParagraph = document.createElement("p");
+            redParagraph.style.color="red";
+            redParagraph.textContent="Hey I am Red!";
+            container.appendChild(redParagraph);
+
+            let blueH3 = document.createElement("h3");
+            blueH3.style.color="blue";
+            blueH3.textContent="I am blue!";
+            container.appendChild(blueH3);
+
+            let newDiv = document.createElement("div"); //this makes it a node already I guess
+
+            let whiteParagraph = document.createElement("p");
+            whiteParagraph.textContent="ME TOO!";
+            newDiv.appendChild(whiteParagraph);
+
+            let whiteH1 = document.createElement("h1");
+            whiteH1.textContent="I am in a div!";
+            newDiv.appendChild(whiteH1);
+
+            container.appendChild(newDiv);
+        </script>
+    </body>
+</html>
